@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>POST</http_method>
+        <name>PostSample</name>
+        <operation_script><![CDATA[/**
+ *  POST - Sample Request API - dataString
+ *  sample usage:
+ *  var requestBody = request.body;
+ *  var requestString = requestBody.dataString;
+ */
+(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    var requestBody = request.body;
+    var requestString = requestBody.dataString;
+    return {"requestString": requestString};
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_hotel/mysampleapi/PostSample</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/PostSample</relative_path>
+        <request_example/>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>SakthirajAdmin</sys_created_by>
+        <sys_created_on>2017-08-05 13:38:02</sys_created_on>
+        <sys_id>675f2b074f10030089352ed18110c707</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>PostSample</sys_name>
+        <sys_package display_value="Hotel" source="x_hotel">a8f395beebc522004fcde08a5206fe2e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel">a8f395beebc522004fcde08a5206fe2e</sys_scope>
+        <sys_update_name>sys_ws_operation_675f2b074f10030089352ed18110c707</sys_update_name>
+        <sys_updated_by>SakthirajAdmin</sys_updated_by>
+        <sys_updated_on>2017-08-05 13:49:02</sys_updated_on>
+        <web_service_definition display_value="MySampleAPI">403fa7074f10030089352ed18110c72c</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

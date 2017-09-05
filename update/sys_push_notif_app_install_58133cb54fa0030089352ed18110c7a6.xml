@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_push_notif_app_install">
+    <sys_push_notif_app_install action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <last_registered_on>2017-08-13 12:57:43</last_registered_on>
+        <sys_class_name>sys_push_notif_app_install</sys_class_name>
+        <sys_created_by>SakthirajAdmin</sys_created_by>
+        <sys_created_on>2017-08-13 12:57:43</sys_created_on>
+        <sys_id>58133cb54fa0030089352ed18110c7a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>c0Xx7TrFPhU:APA91bGE4srw3oY3vqzYMcJvUOLo-kNJSbCrHIY-BC1NWgQklk-R_SUrR9WkiNG3G8GfsfxR5qX888uiqVvWob9wNwwf_flWgXQPYRkVHHO4thTJMDWgrZ3ezzWtw87TzwN_hUH2vWDJ</sys_name>
+        <sys_package display_value="Hotel" source="x_hotel">a8f395beebc522004fcde08a5206fe2e</sys_package>
+        <sys_policy/>
+        <sys_push_application_id display_value="ServiceNow Mobile Application">ab704041ff1102009738ffffffffff33</sys_push_application_id>
+        <sys_push_platform_id display_value="Google">53e75f30ff0002009738ffffffffff12</sys_push_platform_id>
+        <sys_scope display_value="Hotel">a8f395beebc522004fcde08a5206fe2e</sys_scope>
+        <sys_update_name>sys_push_notif_app_install_58133cb54fa0030089352ed18110c7a6</sys_update_name>
+        <sys_updated_by>SakthirajAdmin</sys_updated_by>
+        <sys_updated_on>2017-08-13 12:57:43</sys_updated_on>
+        <sys_user_id display_value="Sakthiraj K">ebb09cf64f10030089352ed18110c77a</sys_user_id>
+        <token>c0Xx7TrFPhU:APA91bGE4srw3oY3vqzYMcJvUOLo-kNJSbCrHIY-BC1NWgQklk-R_SUrR9WkiNG3G8GfsfxR5qX888uiqVvWob9wNwwf_flWgXQPYRkVHHO4thTJMDWgrZ3ezzWtw87TzwN_hUH2vWDJ</token>
+    </sys_push_notif_app_install>
+</record_update>

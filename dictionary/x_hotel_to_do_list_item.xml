@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="To Do List Item" max_length="40" name="x_hotel_to_do_list_item" type="collection"/>
+</database>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <hint/>
+        <name>My Test Table</name>
+        <order/>
+        <roles>x_hotel.my_test_table_user</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>SakthirajAdmin</sys_created_by>
+        <sys_created_on>2017-08-21 07:49:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fe29f09c4f30030089352ed18110c732</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Test Table</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hotel" source="x_hotel">a8f395beebc522004fcde08a5206fe2e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel">a8f395beebc522004fcde08a5206fe2e</sys_scope>
+        <sys_update_name>sys_ui_application_fe29f09c4f30030089352ed18110c732</sys_update_name>
+        <sys_updated_by>SakthirajAdmin</sys_updated_by>
+        <sys_updated_on>2017-08-21 07:49:11</sys_updated_on>
+    </sys_ui_application>
+</record_update>

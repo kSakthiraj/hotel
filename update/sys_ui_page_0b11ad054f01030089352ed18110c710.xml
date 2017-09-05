@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[angular.module('todo', ['sn.glideAjax']);
+angular.module('todo').controller('TodoListCtrl', function($scope, GlideAjax) {
+	$scope.todos = [];   
+	load();
+	$scope.add = function(newTodo) {       
+        $scope.todos.push(newTodo);   
+		
+        var ga = new GlideAjax('ToDoListItems');
+		ga.addParam('sysparm_name', 'add');
+		ga.addParam('short_description', newTodo);
+		
+		//ga.setScope('x_hotel');
+		ga.getJSON(function(response) {
+			// don't need to do anything here
+		});
+    };
+
+	function load() {
+		var ga = new GlideAjax('ToDoListItems');
+		ga.addParam('sysparm_name', 'getList');
+		//ga.setScope('x_hotel');
+		ga.getJSON(function(response) {
+			if (!response)
+				return;
+			$scope.todos = response;
+		});
+	}
+});
+angular.module('sn.glideAjax', []);
+angular.module('sn.glideAjax').service('GlideAjax', function($rootScope) {
+	var glideAjax = window.GlideAjax;
+	glideAjax.prototype.getJSON = function(callback) {
+		this.getXMLAnswer(function(answer) {
+			var answerJSON = JSON.parse(answer);
+			callback(answerJSON);
+			$rootScope.$apply();
+			});
+	};
+ 
+	return glideAjax;
+});]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_hotel_toDoList.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.js"></script>
+<div ng-app="todo">
+	
+    <div class="col-md-6" ng-controller="TodoListCtrl">
+            <h1>Todo List</h1>
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="todoItem in todos track by $index" ng-bind="todoItem"></li>
+            </ul>
+            <div>
+                <label>Add new todo:
+                    <input class="form-control" ng-model="newTodo"/>
+                </label>
+                <button style="margin-left:15px" ng-click="add(newTodo)" type="button" class="btn btn-primary">Add Todo</button>
+            </div>
+        </div>
+</div>
+</j:jelly>]]></html>
+        <name>toDoList</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>SakthirajAdmin</sys_created_by>
+        <sys_created_on>2017-09-05 04:56:00</sys_created_on>
+        <sys_id>0b11ad054f01030089352ed18110c710</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>toDoList</sys_name>
+        <sys_package display_value="Hotel" source="x_hotel">a8f395beebc522004fcde08a5206fe2e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel">a8f395beebc522004fcde08a5206fe2e</sys_scope>
+        <sys_update_name>sys_ui_page_0b11ad054f01030089352ed18110c710</sys_update_name>
+        <sys_updated_by>SakthirajAdmin</sys_updated_by>
+        <sys_updated_on>2017-09-05 07:45:41</sys_updated_on>
+    </sys_ui_page>
+</record_update>

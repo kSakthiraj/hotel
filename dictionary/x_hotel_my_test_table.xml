@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="My Test Table" max_length="40" name="x_hotel_my_test_table" type="collection">
+        <element label="Test Phone Number" max_length="40" name="test_phone_number" type="phone_number_e164"/>
+        <element display="true" label="Translated HTML Example" max_length="200" name="translated_html_example" type="translated_html"/>
+        <element label="Translated Text Example" max_length="40" name="translated_text_example" type="translated_text"/>
+        <element label="True/False Example" max_length="40" name="true_false_example" type="boolean"/>
+        <element label="URL Example" max_length="1024" name="url_example" type="url"/>
+        <element label="Video Example" max_length="40" name="video_example" type="video"/>
+        <element label="Wiki Example" max_length="65536" name="wiki_example" type="wiki_text"/>
+        <element label="Workflow Example" max_length="80" name="workflow_example" type="workflow"/>
+    </element>
+</database>

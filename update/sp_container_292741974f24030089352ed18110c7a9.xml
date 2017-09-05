@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>My Widget - Test Page - Container 2</name>
+        <order>2</order>
+        <sp_page display_value="my_widget">6542e0534f60030089352ed18110c7bf</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>SakthirajAdmin</sys_created_by>
+        <sys_created_on>2017-08-18 06:16:20</sys_created_on>
+        <sys_id>292741974f24030089352ed18110c7a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Widget - Test Page - Container 2</sys_name>
+        <sys_package display_value="Hotel" source="x_hotel">a8f395beebc522004fcde08a5206fe2e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel">a8f395beebc522004fcde08a5206fe2e</sys_scope>
+        <sys_update_name>sp_container_292741974f24030089352ed18110c7a9</sys_update_name>
+        <sys_updated_by>SakthirajAdmin</sys_updated_by>
+        <sys_updated_on>2017-08-18 06:16:20</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+</record_update>
